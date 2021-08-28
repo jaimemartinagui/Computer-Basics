@@ -1,2 +1,2 @@
-# computer_basics
+# Computer-Basics
 Exploring computer basics.
