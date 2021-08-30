@@ -38,6 +38,7 @@ The [AND](#and_gate) and [NOT](#not_gate) logic gates, which can be easily creat
 <a name="nand_gate"></a>
 <p><strong>NAND</strong></p>
 <div align="left">
+  <img src="img/nand_gate.png" alt="nand_gate" height="200" width="600"/>
   <img src="img/nand_truth_table.png" alt="nand_truth_table" height="200" width="200"/>
 </div>
 
