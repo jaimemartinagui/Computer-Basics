@@ -4,6 +4,7 @@
 
 1. [Basic logic gates (AND, NOT)](#section_1)
 2. [Compound logic gates (NAND, OR, XOR)](#section_2)
+3. [Binary adder](#section_3)
 
 Exploring computer basics.
 
@@ -49,4 +50,14 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 <div align="left">
   <img src="img/xor_gate.png" alt="xor_gate" height="200" width="600"/>
   <img src="img/xor_truth_table.png" alt="xor_truth_table" height="200" width="200"/>
+</div>
+
+<a name="section_3"></a>
+### 3. Binary adder
+
+The following table represents the binary sum of 2 bits. It is clear that the carry column matches perfectly the AND gate, and the sum column matches the XOR gate.
+
+<p><strong>2-bits addition</strong></p>
+<div align="left">
+  <img src="img/2_bits_binary_addition.png" alt="2_bits_binary_addition" height="200" width="200"/>
 </div>
