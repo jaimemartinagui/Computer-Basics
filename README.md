@@ -30,9 +30,9 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 <a name="section_2"></a>
 ### 2. Compound logic gates (NAND, OR, XOR)
 
-- NAND --> consists of an AND gate followed by a NOT gate.
-- OR --> each input is passed through a NOT gate, and then both of them enter a NAND gate.
-- XOR --> an OR gate and a NAND gate both receive both inputs in parallel. The output of these two gates enter an AND gate.
+- NAND -> consists of an AND gate followed by a NOT gate.
+- OR -> each input is passed through a NOT gate, and then both of them enter a NAND gate.
+- XOR -> an OR gate and a NAND gate both receive both inputs in parallel. The output of these two gates enter an AND gate.
 
 <p><strong>NAND</strong></p>
 <div align="left">
