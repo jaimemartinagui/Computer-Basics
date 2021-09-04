@@ -70,5 +70,5 @@ The following diagram represents the binary sum of 2 bits (A and B). It is clear
 In order to consider the carry bit, we have to add a third input to the addition.
 <div align="left">
   <img src="img/3_bits_binary_addition.png" alt="3_bits_binary_addition" height="250" width="600"/>
-  <img src="img/3_bits_binary_addition_truth_table.png" alt="3_bits_binary_addition_truth_table" height="250" width="250"/>
+  <img src="img/3_bits_binary_addition_truth_table.png" alt="3_bits_binary_addition_truth_table" height="250" width="200"/>
 </div>
