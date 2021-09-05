@@ -7,14 +7,14 @@ def and_(input_1, input_2):
 
     _check_binary_args(input_1)
 
-    return input_1 and input_2
+    return int(input_1) and int(input_2)
 
 def not_(input_):
     """NOT logic gate."""
 
     _check_binary_args(input_)
 
-    return not input_
+    return not int(input_)
 
 def _check_binary_args(*args):
     """Function to check that all the arguments are a binary element (0, 1, True, False)."""
