@@ -55,7 +55,7 @@ def adder_4_bit_numbers(a, b, carry_input):
     return carry, sum_
 
 def adder(a, b, carry_input):
-    """Binary adder with carry input."""
+    """Binary adder for 1-bit numbers with carry input."""
 
     carry_aux, sum_aux = _adder(a, b)
 
@@ -65,7 +65,7 @@ def adder(a, b, carry_input):
     return carry, sum_
 
 def _adder(a, b):
-    """Binary adder."""
+    """Binary adder for 1-bit numbers."""
 
     sum_   = xor_(a, b)
     carry = and_(a, b)
