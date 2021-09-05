@@ -3,8 +3,8 @@
     A general adder for two binary numbers is constructed from logic gates AND, OR, XOR.
 """
 
-from compound_logic_gates import or_, xor_
 from basic_logic_gates import and_
+from compound_logic_gates import or_, xor_
 
 def general_adder(a, b):
     """
