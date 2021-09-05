@@ -63,7 +63,7 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 
 ### 3. Binary adder
 
-<p><strong>2-bits addition</strong></p>
+<p><strong>Addition of 1-bit numbers</strong></p>
 
 The following diagram represents the binary sum of 2 bits (A and B). It is clear that the carry column matches perfectly the AND gate, and the sum column matches the XOR gate.
 
@@ -83,4 +83,4 @@ However, we have to add a third input to the addition in order to take into acco
   <br>
 </small>
 
-<p><strong>4-bits addition</strong></p>
+<p><strong>Addition of 4-bit numbers</strong></p>
