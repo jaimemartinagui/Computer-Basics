@@ -23,7 +23,7 @@ def general_adder(a, b):
     sum_  = ''
 
     for bit_a, bit_b in reversed(list(zip(a, b))):
-        carry, sum_bit = adder_2_bits(int(bit_a), int(bit_b), carry)
+        carry, sum_bit = adder(int(bit_a), int(bit_b), carry)
         sum_ = str(sum_bit) + sum_
 
     if carry:
@@ -31,10 +31,10 @@ def general_adder(a, b):
 
     return sum_
 
-def adder_4_bits(a, b, carry_input):
+def adder_4_bit_numbers(a, b, carry_input):
     """
-    4 bits binary adder.
-    Returns the 4 bits sum (string) and the carry output (binary element).
+    Adder for 4-bit numbers.
+    Returns the 4-bit sum (string) and the carry output (binary element).
     It overflows when the sum is greater than 4 bits (indicated by the carry output).
 
     Parameters:
@@ -45,26 +45,26 @@ def adder_4_bits(a, b, carry_input):
     a_1, a_2, a_3, a_4 = map(int, a)
     b_1, b_2, b_3, b_4 = map(int, b)
 
-    carry_1, sum_4 = adder_2_bits(a_4, b_4, carry_input)
-    carry_2, sum_3 = adder_2_bits(a_3, b_3, carry_1)
-    carry_3, sum_2 = adder_2_bits(a_2, b_2, carry_2)
-    carry,   sum_1 = adder_2_bits(a_1, b_1, carry_3)
+    carry_1, sum_4 = adder(a_4, b_4, carry_input)
+    carry_2, sum_3 = adder(a_3, b_3, carry_1)
+    carry_3, sum_2 = adder(a_2, b_2, carry_2)
+    carry,   sum_1 = adder(a_1, b_1, carry_3)
 
     sum_ = str(sum_1) + str(sum_2) + str(sum_3) + str(sum_4)
 
     return carry, sum_
 
-def adder_2_bits(a, b, carry_input):
-    """2 bits binary adder."""
+def adder(a, b, carry_input):
+    """Binary adder with carry input."""
 
-    carry_aux, sum_aux = adder(a, b)
+    carry_aux, sum_aux = _adder(a, b)
 
     sum_  = xor_(sum_aux, carry_input)
     carry = or_(and_(sum_aux, carry_input), carry_aux)
 
     return carry, sum_
 
-def adder(a, b):
+def _adder(a, b):
     """Binary adder."""
 
     sum_   = xor_(a, b)
