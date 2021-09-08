@@ -1,5 +1,5 @@
 """
-    Module with binary adders.
+    Module with binary addition functions.
     A general adder for two binary numbers is constructed from logic gates AND, OR, XOR.
 """
 
