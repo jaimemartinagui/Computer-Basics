@@ -72,7 +72,7 @@ The following diagram represents the binary sum of 2 bits (A and B). It is clear
   <img src="img/adder_truth_table.png" alt="adder_truth_table" height="200" width="200"/>
 </div>
 
-However, we have to add a third input to the addition in order to take into account the carry bit.
+However, we have to add a third input to the addition in order to take into account the carry bit and construct our adder.
 
 <div align="left">
   <img src="img/adder_with_carry.png" alt="adder_with_carry" height="250" width="600"/>
@@ -85,6 +85,8 @@ However, we have to add a third input to the addition in order to take into acco
 
 <p><strong>Addition of 4-bit numbers</strong></p>
 
+With the adder we previously created, we can easily generate a 4-bit numbers adder. This adder overflows when the sum is greater than 4 bits, and this is indicated by the carry output.
+
 <div align="left">
-  <img src="img/4_bits_addition.png" alt="4_bits_addition" height="250" width="600"/>
+  <img src="img/4_bits_addition.png" alt="4_bits_addition" height="350" width="800"/>
 </div>
