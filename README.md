@@ -68,15 +68,15 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 The following diagram represents the binary sum of 2 bits (A and B). It is clear that the carry column matches perfectly the AND gate, and the sum column matches the XOR gate.
 
 <div align="left">
-  <img src="img/2_bits_binary_addition.png" alt="2_bits_binary_addition" height="200" width="600"/>
-  <img src="img/2_bits_binary_addition_truth_table.png" alt="2_bits_binary_addition_truth_table" height="200" width="200"/>
+  <img src="img/adder.png" alt="adder" height="200" width="600"/>
+  <img src="img/adder_truth_table.png" alt="adder_truth_table" height="200" width="200"/>
 </div>
 
 However, we have to add a third input to the addition in order to take into account the carry bit.
 
 <div align="left">
-  <img src="img/3_bits_binary_addition.png" alt="3_bits_binary_addition" height="250" width="600"/>
-  <img src="img/3_bits_binary_addition_truth_table.png" alt="3_bits_binary_addition_truth_table" height="250" width="200"/>
+  <img src="img/adder_with_carry.png" alt="adder_with_carry" height="250" width="600"/>
+  <img src="img/adder_with_carry_truth_table.png" alt="adder_with_carry_truth_table" height="250" width="200"/>
 </div>
 
 <small>
@@ -84,3 +84,7 @@ However, we have to add a third input to the addition in order to take into acco
 </small>
 
 <p><strong>Addition of 4-bit numbers</strong></p>
+
+<div align="left">
+  <img src="img/4_bits_addition.png" alt="4_bits_addition" height="250" width="600"/>
+</div>
