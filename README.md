@@ -90,3 +90,11 @@ With the adder we previously created, we can easily generate a 4-bit numbers add
 <div align="left">
   <img src="img/4_bits_addition.png" alt="4_bits_addition" height="350" width="800"/>
 </div>
+
+<small>
+  <br>
+</small>
+
+<p><strong>General addition</strong></p>
+
+With this simple adder, we can create a general adder for any two numbers (function `general_adder` in `binary_adders.py`).
