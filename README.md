@@ -7,8 +7,6 @@
 3. [Binary addition](#section_3)
 4. [Binary subtraction](#section_4)
 
-Exploring computer basics.
-
 In this project I go through the basics of computer operations.
 
 <a name="section_1"></a>
@@ -104,11 +102,11 @@ With this simple adder, we can create a general adder for any two numbers (funct
 
 ### 4. Binary subtraction
 
-The first step we have to take in order to create the subtraction is to addres the binary negative numbers.
+The first step we have to take in order to create the subtraction is to generate binary negative numbers.
 
 <p><strong>Binary negative numbers</strong></p>
 
-We are going to use the **Two's complement** approach to represent negative numbers in binary. This can be done just by following some steps:
+We are going to use the **"Two's complement"** approach to represent negative numbers in binary. This can be done just by following some steps:
 
 1. Take the binary representation of the positive value (this is, to construct -8, take 8 in binary -> 1000).
 2. Add one extra 0 bit at the beginning (1000 -> 01000)
