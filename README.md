@@ -4,7 +4,8 @@
 
 1. [Basic logic gates (AND, NOT)](#section_1)
 2. [Compound logic gates (NAND, OR, XOR)](#section_2)
-3. [Binary adder](#section_3)
+3. [Binary addition](#section_3)
+4. [Binary subtraction](#section_4)
 
 Exploring computer basics.
 
@@ -61,7 +62,7 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 
 <a name="section_3"></a>
 
-### 3. Binary adder
+### 3. Binary addition
 
 <p><strong>Addition of 1-bit numbers</strong></p>
 
@@ -98,3 +99,18 @@ With the adder we previously created, we can easily generate a 4-bit numbers add
 <p><strong>General addition</strong></p>
 
 With this simple adder, we can create a general adder for any two numbers (function `general_adder` in `binary_adders.py`).
+
+<a name="section_4"></a>
+
+### 4. Binary subtraction
+
+The first step we have to take in order to create the subtraction is to addres the binary negative numbers.
+
+<p><strong>Binary negative numbers</strong></p>
+
+We are going to use the **Two's complement** approach to represent negative numbers in binary. This can be done just by following some steps:
+
+1. Take the binary representation of the positive value (this is, to construct -8, take 8 in binary -> 1000).
+2. Add one extra 0 bit at the beginning (1000 -> 01000)
+3. Invert every bit (01000 -> 10111).
+4. Add 1 to that number (10111 + 00001 = 11000).
