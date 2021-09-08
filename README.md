@@ -2,8 +2,8 @@
 
 ## Index
 
-1. [Basic logic gates (AND, NOT)](#section_1)
-2. [Compound logic gates (NAND, OR, XOR)](#section_2)
+1. [Basic logic gates (`AND`, `NOT`)](#section_1)
+2. [Compound logic gates (`NAND`, `OR`, `XOR`)](#section_2)
 3. [Binary addition](#section_3)
 4. [Binary subtraction](#section_4)
 
@@ -11,18 +11,18 @@ In this project I go through the basics of computer operations.
 
 <a name="section_1"></a>
 
-### 1. Basic logic gates (AND, NOT)
+### 1. Basic logic gates (`AND`, `NOT`)
 
-The AND and NOT logic gates, which can be easily created with simple circuits, are the basis for the rest of the elements addressed in this project.
+The `AND` and `NOT` logic gates, which can be easily created with simple circuits, are the basis for the rest of the elements addressed in this project.
 
-<p><strong>AND</strong></p>
+`AND`
 
 <div align="left">
   <img src="img/and_circuit.png" alt="and_circuit" height="200" width="300"/>
   <img src="img/and_truth_table.png" alt="and_truth_table" height="200" width="200"/>
 </div>
 
-<p><strong>NOT</strong></p>
+`NOT`
 
 <div align="left">
   <img src="img/not_circuit.png" alt="not_circuit" height="200" width="300"/>
@@ -31,27 +31,27 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 
 <a name="section_2"></a>
 
-### 2. Compound logic gates (NAND, OR, XOR)
+### 2. Compound logic gates (`NAND`, `OR`, `XOR`)
 
-- NAND -> consists of an AND gate followed by a NOT gate.
-- OR -> each input is passed through a NOT gate, and then both of them enter a NAND gate.
-- XOR -> an OR gate and a NAND gate both receive both inputs in parallel. The output of these two gates enter an AND gate.
+- `NAND` -> consists of an `AND` gate followed by a `NOT` gate.
+- `OR` -> each input is passed through a `NOT` gate, and then both of them enter a `NAND` gate.
+- `XOR` -> an `OR` gate and a `NAND` gate both receive both inputs in parallel. The output of these two gates enter an `AND` gate.
 
-<p><strong>NAND</strong></p>
+`NAND`
 
 <div align="left">
   <img src="img/nand_gate.png" alt="nand_gate" height="200" width="600"/>
   <img src="img/nand_truth_table.png" alt="nand_truth_table" height="200" width="200"/>
 </div>
 
-<p><strong>OR</strong></p>
+`OR`
 
 <div align="left">
   <img src="img/or_gate.png" alt="or_gate" height="200" width="600"/>
   <img src="img/or_truth_table.png" alt="or_truth_table" height="200" width="200"/>
 </div>
 
-<p><strong>XOR</strong></p>
+`XOR`
 
 <div align="left">
   <img src="img/xor_gate.png" alt="xor_gate" height="200" width="600"/>
@@ -64,7 +64,7 @@ The AND and NOT logic gates, which can be easily created with simple circuits, a
 
 <p><strong>Addition of 1-bit numbers</strong></p>
 
-The following diagram represents the binary sum of 2 bits (A and B). It is clear that the carry column matches perfectly the AND gate, and the sum column matches the XOR gate.
+The following diagram represents the binary sum of 2 bits (A and B). It is clear that the carry column matches perfectly the `AND` gate, and the sum column matches the `XOR` gate.
 
 <div align="left">
   <img src="img/adder.png" alt="adder" height="200" width="600"/>
@@ -112,3 +112,9 @@ We are going to use the **"Two's complement"** approach to represent negative nu
 2. Add one extra 0 bit at the beginning (1000 -> 01000)
 3. Invert every bit (01000 -> 10111).
 4. Add 1 to that number (10111 + 00001 = 11000).
+
+This process can be achieved using the `NOT` gate and the `general_adder` we created before, as shown in the following diagram.
+
+<div align="left">
+  <img src="img/convert_to_negative.png" alt="convert_to_negative" height="300" width="800"/>
+</div>
