@@ -15,14 +15,12 @@ def general_adder(a, b):
     - a and b must be strings of binary elements (0, 1) --> e.g. '0111010'.
     """
 
-    if not len(a) == len(b):
-        zeros_to_add = '0' * abs(len(a) - len(b))
-        a, b = (a, zeros_to_add + b) if len(a) > len(b) else (zeros_to_add + a, b)
-
     carry = False
     sum_  = ''
 
-    for bit_a, bit_b in reversed(list(zip(a, b))):
+    for i in range(1, max(len(a), len(b)) + 1):
+        bit_a = a[-i] if i <= len(a) else '0'
+        bit_b = b[-i] if i <= len(b) else '0'
         carry, sum_bit = adder(int(bit_a), int(bit_b), carry)
         sum_ = str(sum_bit) + sum_
 
@@ -71,3 +69,9 @@ def _adder(a, b):
     carry = and_(a, b)
 
     return carry, sum_
+
+
+a = '1001'
+b = '101010101010101'
+
+print(general_adder_2(a, b))
