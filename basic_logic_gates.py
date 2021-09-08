@@ -14,7 +14,7 @@ def not_(input_):
 
     _check_binary_args(input_)
 
-    return not int(input_)
+    return int(not input_)
 
 def _check_binary_args(*args):
     """Function to check that all the arguments are a binary element (0, 1, True, False)."""

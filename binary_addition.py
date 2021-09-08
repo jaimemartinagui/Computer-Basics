@@ -69,9 +69,3 @@ def _adder(a, b):
     carry = and_(a, b)
 
     return carry, sum_
-
-
-a = '1001'
-b = '101010101010101'
-
-print(general_adder_2(a, b))
