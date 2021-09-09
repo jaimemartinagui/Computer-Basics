@@ -17,7 +17,7 @@ def general_subtractor(a, b):
 
     # return general_adder(a, negative_b)
 
-def convert_to_correct_format(binary_number, negative=False):
+def convert_to_twos_complement_format(binary_number, negative=False):
     """Function to convert binary numbers to Two's complement format."""
 
     formatted_number = '0' + binary_number
