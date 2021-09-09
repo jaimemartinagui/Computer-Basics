@@ -9,16 +9,14 @@ def general_subtractor(a, b):
     """
     General binary subtractor.
     Subtracts b from a.
+    Both a and b must be in Two's complement format.
+    Returns the output in Two's complement format.
     """
 
-    pass
-
-    # negative_b = convert_to_negative(b)
-
-    # return general_adder(a, negative_b)
+    return general_adder(a, b)
 
 def convert_to_twos_complement_format(binary_number, negative=False):
-    """Function to convert binary numbers to Two's complement format."""
+    """Function to convert standard binary numbers to Two's complement format."""
 
     formatted_number = '0' + binary_number
 
