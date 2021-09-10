@@ -95,4 +95,4 @@ With the adder we previously created, we can easily generate a 4-bit numbers add
 
 <p><strong>General addition</strong></p>
 
-With this simple adder, we can create a general adder for any two numbers (function `general_adder` in `binary_addition.py`).
+We can also create a general adder for any two numbers using just the 1-bit numbers adder, as done in the `general_adder` function in `binary_addition.py`.
