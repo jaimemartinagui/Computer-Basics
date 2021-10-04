@@ -1,4 +1,4 @@
-# Computer-Basics
+# Computer Basics
 
 ## Index
 
